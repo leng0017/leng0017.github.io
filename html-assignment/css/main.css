@@ -18,3 +18,7 @@ ul {
 li:nth-child(odd) {
     background-color: teal;
 }
+
+nav ul {
+    list-style: none;
+}
