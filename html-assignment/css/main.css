@@ -22,3 +22,8 @@ li:nth-child(odd) {
 nav ul {
     list-style: none;
 }
+nav a {
+    text-decoration: none;
+    border: 1px solid green;
+	background-color: yellow;
+}
