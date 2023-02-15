@@ -27,3 +27,7 @@ nav a {
     border: 1px solid green;
 	background-color: yellow;
 }
+nav a:hover, nav a:focus {
+	background-color: red;
+	color: orange;
+}
