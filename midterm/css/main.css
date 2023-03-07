@@ -1,0 +1,18 @@
+header {
+    position: relative;
+}
+  
+  header img {
+    display: block;
+    width: 100%;
+}
+  
+  .site-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+}
