@@ -102,4 +102,7 @@ input[type="submit"] {
 
 body {
     background-color: #aad4cf;
+    border-left: 100px solid #8be0d6;
+    border-right: 100px solid #8be0d6;
+    border-radius: 40px;
 }
