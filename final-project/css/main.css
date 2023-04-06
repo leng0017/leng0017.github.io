@@ -69,3 +69,52 @@ body {
 .search-icon:hover {
     color: #222222;
 }
+
+.welcome-section {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.text-area {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    color: white; 
+}
+
+.text-area h1 {
+    font-size: 5rem; 
+    margin-bottom: 1rem;
+}
+
+.text-area p {
+    font-size: 1.5rem; 
+    margin-bottom: 1rem;
+}
