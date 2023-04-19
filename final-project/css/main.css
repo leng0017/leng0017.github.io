@@ -72,7 +72,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    width: calc(100% - 20px); 
+    width: 100%; 
     list-style-type: none;
     padding: 0;
     margin-left: 10px;
@@ -104,7 +104,7 @@ body {
     position: relative;
     width: 100%; 
     padding-left: 10px;
-    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 20px;
 }
 
@@ -536,6 +536,68 @@ footer {
     text-decoration: underline;
     transition: color 0.3s;
 }
+
+
+@media (min-width: 760px) {
+    .nav-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+      
+    .nav-links {
+        flex-direction: row;
+        margin: 0;
+    }
+      
+    .nav-button {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+      
+    .search {
+        width: 50%;
+        max-width: 400px;
+        margin-right: 20px;
+    }
+
+    .welcome-section {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+      
+    .welcome-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .services-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+      
+    .services-section h1 {
+        grid-column: 1 / -1;
+        text-align: left;
+    }
+      
+    .service-item:nth-child(2),
+    .service-item:nth-child(3) {
+        grid-column: span 2;
+    }
+}  
   
 
   
