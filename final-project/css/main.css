@@ -583,8 +583,8 @@ footer {
 
     .services-section {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
         gap: 20px;
     }
       
@@ -595,8 +595,34 @@ footer {
       
     .service-item:nth-child(2),
     .service-item:nth-child(3) {
-        grid-column: span 2;
+        grid-row: 2;
     }
+
+    .service-item:nth-child(4),
+    .service-item:nth-child(5),
+    .service-item:nth-child(6) {
+        grid-column: span 2;
+        font-size: 0.8em; 
+        padding: 5px; 
+    }
+      
+    .service-item:nth-child(4),
+    .service-item:nth-child(5),
+    .service-item:nth-child(6) {
+        grid-row: 3;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+      
+    .contact-section {
+        flex-basis: 48%;
+    }
+
+    
 }  
   
 
