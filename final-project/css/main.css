@@ -612,14 +612,22 @@ footer {
         grid-row: 3;
     }
 
-    .contact-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+    .contact-location-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
     }
       
     .contact-section {
-        flex-basis: 48%;
+        grid-column: 1;
+    }
+      
+    .location-section {
+        grid-column: 2;
+    }
+
+    .hours-section {
+        grid-row: 2;
     }
 
     
